@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://ro4x40gaxuex"]
+
+[ext_resource type="Shader" uid="uid://c0kuegf1dtob8" path="res://particle_shader/boid_particle.gdshader" id="1_yxvxf"]
+[ext_resource type="Texture2D" uid="uid://cqr7cxcfwdkhe" path="res://particle_shader/boid.png" id="2_s41ff"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uovvq"]
+shader = ExtResource("1_yxvxf")
+
+[node name="BoidParticles" type="GPUParticles2D"]
+scale = Vector2(0.5, 0.5)
+process_material = SubResource("ShaderMaterial_uovvq")
+texture = ExtResource("2_s41ff")
